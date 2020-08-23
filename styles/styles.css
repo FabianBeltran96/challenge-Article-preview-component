@@ -1,0 +1,127 @@
+/*variables*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: white;
+  font-family: "Manrope", sans-serif;
+  width: 20em;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 24px rgba(158, 175, 194, 0.8);
+          box-shadow: 0px 4px 24px rgba(158, 175, 194, 0.8);
+}
+
+.container-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20em;
+  height: 12em;
+}
+
+.container-text {
+  padding: 1em;
+}
+
+.container-text h1 {
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #48556a;
+}
+
+.container-text p {
+  margin: 12px 0 0 0;
+  color: #48556a;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.container .info-container {
+  margin: 12px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50% 1fr;
+      grid-template-columns: 1fr 50% 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.container .info-container .avatar {
+  width: 50px;
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  place-self: center;
+}
+
+.container .info-container p {
+  font-weight: bold;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  color: #6d7f97;
+  font-weight: 700;
+}
+
+.container .info-container span {
+  color: #9eafc2;
+  font-weight: 500;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.container .info-container .share {
+  width: 40px;
+  height: 40px;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  place-self: center;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .info-container .share img {
+  width: 25px;
+  height: 25px;
+  place-self: center;
+}
+
+.attribution {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */

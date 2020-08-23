@@ -25,6 +25,7 @@ body {
 }
 
 .container {
+  overflow: hidden;
   background-color: white;
   width: 22em;
   border-radius: 10px;
@@ -106,14 +107,14 @@ body {
       }
     }
     .share .tooltip-text {
-      height: 50px;
+      height: 60px;
       visibility: hidden;
       background-color: $very-dark-grayish-blue;
       color: $grayish-blue;
       border-radius: 5px;
       font-weight: $medium;
       position: absolute;
-      bottom: -50%;
+      bottom: -66%;
       left: 0%;
       margin-left: -22em;
     }
@@ -139,6 +140,7 @@ body {
     z-index: 2;
   }
   .container {
+    overflow: visible;
     width: 800px;
     height: 300px;
     display: flex;

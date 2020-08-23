@@ -11,14 +11,13 @@ body {
   display: -ms-grid;
   display: grid;
   place-content: center;
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
   background-color: white;
-  font-family: "Manrope", sans-serif;
   width: 22em;
   border-radius: 10px;
-  overflow: hidden;
   -webkit-box-shadow: 0px 4px 24px rgba(158, 175, 194, 0.8);
           box-shadow: 0px 4px 24px rgba(158, 175, 194, 0.8);
 }
@@ -72,6 +71,8 @@ body {
   border-radius: 50%;
   -ms-grid-column: 1;
   grid-column: 1;
+  -webkit-box-shadow: 2px 5px 10px #9eafc2;
+          box-shadow: 2px 5px 10px #9eafc2;
 }
 
 .container .info-container-personal {
@@ -98,7 +99,7 @@ body {
 }
 
 .container .info-container .share {
-  width: 30px;
+  position: relative;
   height: 30px;
   -ms-grid-column: 3;
   grid-column: 3;
@@ -107,15 +108,43 @@ body {
   place-self: center;
   display: -ms-grid;
   display: grid;
-}
-
-.container .info-container .share:active {
-  background-color: yellow;
-  color: black;
+  color: #6d7f97;
 }
 
 .container .info-container .share img {
   place-self: center;
+}
+
+.container .info-container .share .tooltip-text {
+  width: 27.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .info-container .share p {
+  place-self: center;
+  letter-spacing: 3px;
+}
+
+.container .info-container .share .tooltip-text {
+  height: 50px;
+  visibility: hidden;
+  background-color: #48556a;
+  color: #9eafc2;
+  border-radius: 5px;
+  font-weight: 500;
+  position: absolute;
+  bottom: -50%;
+  left: 0%;
+  margin-left: -22em;
+}
+
+.container .info-container .share:hover .tooltip-text {
+  visibility: visible;
 }
 
 .attribution {
@@ -129,6 +158,10 @@ body {
 }
 
 @media (min-width: 1040px) {
+  body {
+    position: relative;
+    z-index: 2;
+  }
   .container {
     width: 800px;
     height: 300px;
@@ -162,6 +195,61 @@ body {
         align-self: center;
     -ms-grid-column-align: left;
         justify-self: left;
+  }
+  .container .info-container .share {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    background-color: #ecf2f8;
+    border-radius: 50%;
+    place-self: center;
+    display: -ms-grid;
+    display: grid;
+    color: #6d7f97;
+  }
+  .container .info-container .share img {
+    place-self: center;
+  }
+  .container .info-container .share .tooltip-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .info-container .share p {
+    place-self: center;
+    letter-spacing: 3px;
+  }
+  .container .info-container .share .tooltip-text {
+    width: 250px;
+    height: 50px;
+    visibility: hidden;
+    background-color: #48556a;
+    color: #9eafc2;
+    border-radius: 5px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 10;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -125px;
+  }
+  .container .info-container .share .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #48556a transparent transparent transparent;
+  }
+  .container .info-container .share:hover .tooltip-text {
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -141,18 +141,18 @@ body {
     height: 300px;
   }
   .container-text {
-    padding: 20px 30px;
-    margin-top: 10px;
+    padding: 32px;
   }
   .container-text .title {
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 1px;
   }
-  .container-text .text {
+  .container-text p {
     font-size: 16px;
   }
   .container .info-container {
+    margin-top: 48px;
     -ms-grid-columns: 1fr 70% 1fr;
         grid-template-columns: 1fr 70% 1fr;
   }

@@ -16,7 +16,7 @@ body {
 
 .container {
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(196, 181, 181);
   width: 22em;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 24px rgba(158, 175, 194, 0.8);
